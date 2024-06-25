@@ -3,6 +3,14 @@ spring:
    application:
       name: myweb
 
+   thymeleaf:
+      check-template-loaction: true
+      mode: HTML
+      prefix: classpath:templates/
+      suffix: .html
+      view-names: th/*
+      cache: false
+
    mvc:
       view:
          prefix: /WEB-INF/views/
